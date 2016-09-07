@@ -1,0 +1,108 @@
+*,
+::before,
+::after{
+	padding: 0;
+	margin: 0;
+	-webkit-tap-highlight-color:transparent;/* 清除点击时候的高亮效果 */
+	-webkit-box-sizing:border-box;
+}
+
+body{
+	font-size: 14px;
+	font-family: "Microsoft YaHei",sans-serif;
+	color: #333;
+}
+
+a{
+	text-decoration: none;
+	color: #333;
+}
+
+ul{
+	list-style: none;
+}
+
+input,textarea{
+	border: none;
+	resize:none;/* 不让手动的拖放 */
+	outline: none;/* 清除选中的效果 */
+	-webkit-appearance:none;/* 清除浏览器默认的样式 */
+}
+
+/* 清除浮动 */
+
+.clearfix::before,
+.clearfix::after{
+	content: " ";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+[class^="icon-"]{
+	background: url(../images/sprites.png) no-repeat;
+	-webkit-background-size: 200px 200px;
+	background-size: 200px 200px;
+}
+
+/*头部通栏*/
+.jd-topbar{
+	height: 45px;
+	width: 100%;
+	background: url(../images/header-bg.png) repeat-x;
+	-webkit-background-size: 1px 44px;
+	background-size: 1px 44px;
+	border-bottom: 1px solid #e0e0e0;
+	position: absolute;
+	z-index: 1000;
+}
+/*返回*/
+.jd-topbar .icon-back{
+	background-position: -20px 0;
+	width: 20px;
+	height: 20px;
+	display: block;
+	margin: 12px 10px;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*搜索*/
+.jd-topbar form{
+	width: 100%;
+	height: 40px;
+	padding: 0 40px;
+}
+
+.jd-topbar form input{
+	width: 100%;
+	height: 32px;
+	border: 1px solid #bfbfbf;
+	border-radius: 4px;
+	margin-top: 6px;
+	padding-left: 5px;
+}
+
+/*plaaceholder 控制样式*/
+input[placeholder], [placeholder], *[placeholder] {
+	color:#666;
+	font-size: 12px;
+} 
+
+.jd-topbar .icon-menu{
+	background-position: -60px 0;
+	width: 20px;
+	height: 20px;
+	display: block;
+	margin: 12px 10px;
+	
+	background-clip: content-box;
+	background-origin: content-box;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>cart-购物车</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+	<header class="jd-topbar">
+		<a href="index.html" class="icon-back"></a>
+		<h2>购物车</h2>
+		<a href="#" class="icon-menu"></a>
+	</header>
+	<!-- 安全提示 -->
+	<div class="jd-safeTip">
+		<p>您正在安全购物环境中，请放心购物</p>
+	</div>
+
+	<div class="jd-shop">
+		<div class="jd-shop-tit clearfix">
+			<div class="tit-check">
+				<div class="jd-check-box"></div>
+			</div>
+			<div class="tit-name">
+				<img class="imgLogo" src="images/buy-logo.png" alt="">
+				<span class="name">京东自营</span>
+				<span class="tip">您享受满79元免运费服务</span>
+			</div>
+		</div>
+		<!-- 一个选项 -->
+		<div class="jd-shop-con">
+			<div class="con-check">
+				<div class="jd-check-box">
+					
+				</div>
+			</div>
+
+			<div class="con-product clearfix">
+				<a href="#" class="con-product-img"><img src="images/detail01.jpg" alt=""></a>
+				<div class="con-product-box">
+					<a href="#" class="name">Apple iPhone 6s (A1700) 16G 深空灰色 移动联通电信4G手机</a>
+					<p class="price">￥2000.00</p>
+					<div class="option">
+						<div class="change-box">
+							<span class="change-box-left jian">-</span>
+							<input class="shu" type="tel" name="" id="" value="1">
+							<span class="change-box-right jia">+</span>
+						</div>
+					
+						<div class="delete-box">
+							<div class="delete-box-top"></div>
+							<div class="delete-box-bot"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="jd-shop">
+		<div class="jd-shop-tit clearfix">
+			<div class="tit-check">
+				<div class="jd-check-box" checked></div>
+			</div>
+			<div class="tit-name">
+				<img class="imgLogo" src="images/buy-logo.png" alt="">
+				<span class="name">京东自营</span>
+				<span class="tip">您享受满79元免运费服务</span>
+			</div>
+		</div>
+		<!-- 一个选项 -->
+		<div class="jd-shop-con">
+			<div class="con-check">
+				<div class="jd-check-box" checked>
+					
+				</div>
+			</div>
+
+			<div class="con-product clearfix">
+				<a href="#" class="con-product-img"><img src="images/detail01.jpg" alt=""></a>
+				<div class="con-product-box">
+					<a href="#" class="name">Apple iPhone 6s (A1700) 16G 深空灰色 移动联通电信4G手机</a>
+					<p class="price">￥2000.00</p>
+					<div class="option">
+						<div class="change-box">
+							<span class="change-box-left jian">-</span>
+							<input class="shu" type="tel" name="" id="" value="1">
+							<span class="change-box-right jia">+</span>
+						</div>
+					
+						<div class="delete-box">
+							<div class="delete-box-top"></div>
+							<div class="delete-box-bot"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 结算 -->
+	<div class="jd-amount">
+		<div class="amount-check">
+				<div class="jd-check-box" checked></div>
+				<span>全选</span>
+			</div>
+
+		<div class="amount-info">
+			<p class="sum">合计：￥0.00</p>
+			<p class="other">总额：￥0.00 返现：￥0.00</p>
+		</div>
+		
+		<a href="" class="amount-submit">
+			去结算：(<span>00</span>)
+		</a>
+	</div>
+
+<!-- 弹出框 -->
+<div class="jd-win" style="display:none;">
+	<div class="jd-win-box">
+		<div class="jd-win-box-text">
+			你确认删除这件商品吗？
+		</div>
+		<div class="jd-btn-box">
+			<a href="#" class="cancel">取消</a>
+			<a href="#" class="submit">确认</a>
+		</div>
+	</div>
+</div>
+
+<script src="js/cart.js"></script>
+</body>
+</html>
